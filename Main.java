@@ -14,10 +14,10 @@ import java.util.Scanner;
 
             System.out.println("Здраствуйте!");
             System.out.println("Введите цену товара (в руб.)");
-            int x = scanner.nextInt() / 100;
+            int priceProduct = scanner.nextInt() / 100;
             System.out.println("Введите вес товара (в кг.)");
-            int a = scanner.nextInt();
-            int c = calculate(x, a);
-            System.out.println("Размер пошлины составит: " + c + " (в руб).");
+            int weightProduct = scanner.nextInt();
+            int tariff = calculate(priceProduct, weightProduct);
+            System.out.println("Размер пошлины составит: " + tariff + " (в руб).");
             }
         }
